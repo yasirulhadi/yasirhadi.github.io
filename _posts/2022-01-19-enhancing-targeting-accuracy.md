@@ -95,6 +95,7 @@ Based upon these, the chosen the model is the Random Forest as it was a) the mos
 * Logistic Regression = 0.734
 <br>
 <br>
+
 ### Growth/Next Steps <a name="overview-growth"></a>
 
 While predictive accuracy was relatively high - other modelling approaches could be tested, especially those somewhat similar to Random Forest, for example XGBoost, LightGBM to see if even more accuracy could be gained.
@@ -1663,3 +1664,4 @@ While predictive accuracy was relatively high - other modelling approaches could
 We could even look to tune the hyperparameters of the Random Forest, notably regularisation parameters such as tree depth, as well as potentially training on a higher number of Decision Trees in the Random Forest.
 
 From a data point of view, further variables could be collected, and further feature engineering could be undertaken to ensure that we have as much useful information available for predicting customer loyalty
+
