@@ -22,7 +22,7 @@ avatar_image: /img/Profile_picture.JPG
 
 #-------------------------------
 # Contact links
-linkedln: "https://linkedln.com/yasirhadi" # Add your linkedln handle
+linkedln: "https://www.linkedin.com/in/yasirhadi/" # Add your linkedln handle
 github: "https://github.com/yasirulhadi"  # Add your github handle
 
 paginate: 6
@@ -51,6 +51,7 @@ defaults:
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
+
 
 
 
