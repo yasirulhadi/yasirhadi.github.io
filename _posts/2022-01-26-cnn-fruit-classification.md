@@ -42,7 +42,6 @@ The only thing they hadn't figured out was how to actually identify each product
 We were asked to put forward a proof of concept on this - and were given some sample images of fruits from their processing platform.
 
 If this was successful and put into place on a larger scale, the client would be able to enhance their sorting & delivery processes.
-
 <br>
 <br>
 ### Actions <a name="overview-actions"></a>
@@ -60,10 +59,8 @@ We then add in **Image Augmentation** to our data pipeline to increase the varia
 With these additions in place, we utlise *keras-tuner* to optimise our network architecture & tune the hyperparameters.  The best network from this testing contains **3 Convolutional Layers**, each followed by **Max Pooling** Layers.  The first Convolutional Layer has **96 filters**, the second & third have **64 filters**.  The output of this third layer is flattened and passed to a **single Dense (Fully Connected) layer** with **160 neurons**.  The Dense Layer has **Dropout** applied with a **dropout rate of 0.5**.  The output from this is passed to the output layer.  Again, we apply the **relu** activation function on all layers, and use the **adam** optimizer.
 
 Finally, we utilise **Transfer Learning** to compare our network's results against that of the pre-trained **VGG16** network.
-
 <br>
 <br>
-
 ### Results <a name="overview-results"></a>
 
 We have made some huge strides in terms of making our network's predictions more accurate, and more reliable on new data.
@@ -81,7 +78,6 @@ In terms of Classification Accuracy on the Test Set, we saw:
 Tuning the networks architecture with Keras-Tuner gave us a great boost, but was also very time intensive - however if this time investment results in improved accuracy then it is time well spent.
 
 The use of Transfer Learning with the VGG16 architecture was also a great success, in only 10 epochs we were able to beat the performance of our smaller, custom networks which were training over 50 epochs.  From a business point of view we also need to consider the overheads of (a) storing the much larger VGG16 network file, and (b) any increased latency on inference.
-
 <br>
 <br>
 ### Growth/Next Steps <a name="overview-growth"></a>
@@ -89,7 +85,6 @@ The use of Transfer Learning with the VGG16 architecture was also a great succes
 The proof of concept was successful, we have shown that we can get very accurate predictions albeit on a small number of classes.  We need to showcase this to the client, discuss what it is that makes the network more robust, and then look to test our best networks on a larger array of classes.
 
 Transfer Learning has been a big success, and was the best performing network in terms of classification accuracy on the Test Set - however we still only trained for a small number of epochs so we can push this even further.  It would be worthwhile testing other available pre-trained networks such as ResNet, Inception, and the DenseNet networks.
-
 <br>
 <br>
 
@@ -1364,5 +1359,6 @@ ___
 # Growth & Next Steps <a name="growth-next-steps"></a>
 
 The proof of concept was successful, we have shown that we can get very accurate predictions albeit on a small number of classes.  We need to showcase this to the client, discuss what it is that makes the network more robust, and then look to test our best networks on a larger array of classes.
+
 
 Transfer Learning has been a big success, and was the best performing network in terms of classification accuracy on the Test Set - however we still only trained for a small number of epochs so we can push this even further.  It would be worthwhile testing other available pre-trained networks such as ResNet, Inception, and the DenseNet networks.
